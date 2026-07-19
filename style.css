@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: radial-gradient(circle at top right, #8dff4f10, transparent 25%),
+    #050505;
+  color: white;
+  min-height: 100vh;
+}
+
+.header {
+  width: 100%;
+  padding: 30px 40px;
+  border-bottom: 1px solid #1e1e1e;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 18px;
+  background: #8dff4f;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.header-text h1 {
+  font-size: 28px;
+  color: #78c043;
+  margin-bottom: 5px;
+}
+
+.header-text p {
+  color: #aaa;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 20px;
+}
+
+.form-card {
+  width: 100%;
+  max-width: 600px;
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 28px;
+  padding: 40px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+}
+
+.form-card h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #78c043;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #78c043;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  height: 55px;
+  background: #1b1b1b;
+  border: 1px solid #2f2f2f;
+  border-radius: 14px;
+  color: white;
+  font-size: 15px;
+  padding: 0 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #8dff4f;
+  box-shadow: 0 0 10px #8dff4f20;
+}
+
+button {
+  width: 100%;
+  height: 60px;
+  border: none;
+  border-radius: 16px;
+  background: #8dff4f;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px #8dff4f30;
+}
+
+.footer {
+  padding: 25px;
+  text-align: center;
+  color: #777;
+  border-top: 1px solid #1e1e1e;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 25px 20px;
+  }
+
+  .header-text h1 {
+    font-size: 22px;
+  }
+
+  .form-card {
+    padding: 30px 25px;
+  }
+}
