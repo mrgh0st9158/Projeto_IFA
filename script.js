@@ -8,7 +8,7 @@ form.addEventListener("submit", async function (event) {
     const resposta = await fetch(
         "https://api.sheetmonkey.io/form/w4yeALRr6RStbfDkovP54b",
         {
-            method: "POST",
+            method: "post",
             body: dados
         }
     );
