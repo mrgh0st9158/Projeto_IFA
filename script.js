@@ -6,7 +6,7 @@ form.addEventListener("submit", async function (event) {
     const dados = new FormData(form);
 
     const resposta = await fetch(
-        "https://api.sheetmonkey.io/form/SEU_ENDPOINT",
+        "https://api.sheetmonkey.io/form/w4yeALRr6RStbfDkovP54b",
         {
             method: "POST",
             body: dados
