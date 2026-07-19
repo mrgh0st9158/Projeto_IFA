@@ -131,6 +131,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   font-size: 70%;
+  gap: 20px;
   padding: 25px;
   text-align: justify;
   color: #777;
