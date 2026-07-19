@@ -5,11 +5,17 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-family: "Roboto", sans-serif;
   background: radial-gradient(circle at top right, #8dff4f10, transparent 25%),
     #050505;
   color: white;
   min-height: 100vh;
+}
+
+.esconder_elemento{
+  display: none !important;
 }
 
 .header {
@@ -45,6 +51,8 @@ body {
 }
 
 .container {
+  flex: 1;
+  align-items: center;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -111,6 +119,7 @@ button {
   cursor: pointer;
   margin-top: 10px;
   transition: 0.3s;
+  padding: 20px;
 }
 
 button:hover {
@@ -119,11 +128,17 @@ button:hover {
 }
 
 .footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
   padding: 25px;
   text-align: center;
   color: #777;
   border-top: 1px solid #1e1e1e;
-  margin-top: 30px;
+}
+
+#section_final{
+  text-align: center;
 }
 
 @media (max-width: 768px) {

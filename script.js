@@ -1,3 +1,11 @@
+
+function abrir_formulario(){
+  document.getElementById("section_inicial").classList.add("esconder_elemento")
+  document.getElementById("section_form").classList.remove("esconder_elemento")
+}
+
+
+
 const form = document.getElementById("eventForm");
 
 form.addEventListener("submit", async function (event) {
@@ -14,8 +22,10 @@ form.addEventListener("submit", async function (event) {
     );
 
     if (resposta.ok) {
-        alert("Resposta enviada com sucesso!");
         form.reset();
+
+        document.getElementById("section_form").classList.add("esconder_elemento")
+        document.getElementById("section_final").classList.remove("esconder_elemento")
     } else {
         alert("Ocorreu um erro ao enviar o formulário.");
     }
