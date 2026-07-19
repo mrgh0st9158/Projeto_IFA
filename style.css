@@ -130,7 +130,7 @@ button:hover {
 .footer {
   display: flex;
   justify-content: space-between;
-  font-size: 70%;
+  font-size: 75%;
   gap: 20px;
   padding: 25px;
   text-align: justify;
