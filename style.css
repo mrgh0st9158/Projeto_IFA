@@ -130,9 +130,9 @@ button:hover {
 .footer {
   display: flex;
   justify-content: space-between;
-  font-size: 15px;
+  font-size: 12px;
   padding: 25px;
-  text-align: center;
+  text-align: justify;
   color: #777;
   border-top: 1px solid #1e1e1e;
 }
