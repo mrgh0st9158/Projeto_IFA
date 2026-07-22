@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title></title>
+  <link rel="preconnect" href="https://googleapis.com" />
+  <link rel="preconnect" href="https://gstatic.com" crossorigin />
+  <link href="https://googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo"></div>
+
+    <div class="header-text">
+      <h1>Formulário IFA</h1>
+      <p>Turma 212</p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section id="section_form" class="form-card">
+      <h2>Formulário</h2>
+
+      <form id="eventForm" action="https://api.sheetmonkey.io/form/q8Lv4KsWiA3HV6s8kZj2Q9" method="post">
+        <div class="form-group">
+          <label>Nome e Sobrenome</label>
+          <input type="text" id="nome" name="Nome e Sobrenome" required />
+        </div>
+
+        <div class="form-group">
+          <label>Idade</label>
+          <input type="text" id="cargo" name="Idade" required />
+        </div>
+
+        <div class="form-group">
+          <label>Turma</label>
+          <input type="text" id="cargo" name="Turmas" required />
+        </div>
+
+        <div class="form-group">
+          <label>Como você avalia a infraestrutura das vias que utiliza em Florianópolis (ciclovias, calçadas, sinalização)?</label>
+          <input type="text" id="setor" name="Avaliação de Infraestrutura" required />
+        </div>
+        
+        <div class="form-group">
+          <label>Você se sente seguro (a) em relação ao trânsito e à segurança pública durante o seu trajeto?</label>
+          <select id="contato" name="Segurança em relação ao Trânsito" required>
+            <option value="">Selecione</option>
+            <option>Sim</option>
+            <option>Não</option>
+            <option>Não tenho certeza</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label>Quanto tempo, mais ou menos, você leva da sua casa ao seu destino todos os dias?</label>
+          <select id="contato" name="Tempo Gasto até o Destino" required>
+            <option value="">Selecione</option>
+            <option>Menos de 10 min</option>
+            <option>10 a 30 min</option>
+            <option>30 a 40 min</option>
+            <option>40 a 60 min</option>
+            <option>1 a 2 horas</option>
+            <option>Mais de 2 horas</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label>Quanto tempo ao todo você leva dentro do transporte público?</label>
+          <select id="contato" name="Tempo Gasto Dentro do Ônibus" required>
+            <option value="">Selecione</option>
+            <option>Menos de 10 min</option>
+            <option>10 a 30 min</option>
+            <option>30 a 40 min</option>
+            <option>40 a 60 min</option>
+            <option>1 a 2 horas</option>
+            <option>Mais de 2 horas</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Você usa (ou já usou) um T.A.(Transporte Alternativo) pra chegar na escola?</label>
+          <select id="contato" name="Utilização de T.A." required>
+            <option value="">Selecione</option>
+            <option>Sim</option>
+            <option>Não</option>
+            <option>Não tenho certeza</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label>Como você acha que os meios de transporte alternativos podem ajudar na diminuição do trânsito de Florianópolis?</label>
+          <input type="text" id="setor" name="Diminuição do Trânsito com T.A." required />
+        </div>
+        
+        <div class="form-group">
+          <label>Qual meio de transporte alternativo você utiliza com mais frequência para ir à escola?</label>
+          <input type="text" id="setor" name="Meio de Transporte Alternativo" required />
+        </div>
+        
+        <div class="form-group">
+          <label>Quantas vezes na semana você utiliza meios de transporte alternativos? E se não utiliza, o porquê?</label>
+          <input type="text" id="setor" name="Quantidade de T.A. Utilizados na Semana" required />
+        </div>
+
+        <div class="form-group">
+          <label>O que você acha que falta para que as pessoas se sintam mais incentivadas a utilizar transportes alternativos?</label>
+          <input type="text" id="setor" name="Incentivação para usarem os T.A." required />
+        </div>
+        
+        <div class="form-group">
+          <label>Qual o maior desafio ao utilizar transportes alternativos em Florianópolis? </label>
+          <input type="text" id="setor" name="Desafios ao usarem T.A." required />
+        </div>
+        
+        <div class="form-group">
+          <label>Como você se sente, e como imagina que os outros estudantes que frequentam transportes alternativos se sentem em todos os dias terem que enfrentar o trânsito para chegar ao local desejado?</label>
+          <input type="text" id="setor" name="Opinião em Relação aos T.A." required />
+        </div>
+
+        <button type="submit">Finalizar Inscrição</button>
+      </form>
+    </section>
+  
+    <section id="section_final" class="form-card esconder_elemento">
+      <h2>Resposta enviada com sucesso, Obrigado.</h2>
+    </section>
+
+
+  </main>
+  
+  <footer class="footer">
+    Grupo: Rodrigo, Eloá
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
